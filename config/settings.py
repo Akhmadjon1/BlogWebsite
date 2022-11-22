@@ -120,7 +120,20 @@ STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
+## Email Backend
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+## pullik sewrver olgande supply qiladi 👇
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# DEFAULT_FROM_EMAIL = 'admin@sariq.dev'
+# EMAIL_HOST = 'smtp.sariq.dev'
+# EMAIL_HOST_USER = 'username'
+# EMAIL_HOST_PASSWORD = 'password'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+
+
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
