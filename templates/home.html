@@ -1,12 +1,17 @@
 {% extends 'base.html' %}
+{% load static %}
+
 {% block title %}Home Page{% endblock title %}
+
 {% block content %}
-    {% if user.is_authenticated %}
-        {{ user.username }}!
-        <p><a href="{% url 'logout' %}">Log Out</a></p>
-    {% else %}
-        <p>You didn't log in!</p>
-        <a href="{% url 'login' %}">Log In</a> |
-        <a href="{% url 'signup' %}">Sign Up</a>
-    {% endif %}
+    <br/>
+    <div class="jumbotron">
+        <h1 class="display-4">Hello Everyone!</h1>
+        <p class="lead">Welcome to Akhmadjon's blogs.</p>
+        <hr class="my-4">
+        <p>You will be able to observe IT related posts here!</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">See the Posts</a>
+        </p>
+    </div>
 {% endblock content %}
