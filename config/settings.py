@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     ## apps I created
     'accounts',
     'pages',
+    'articles',
 ]
 
 MIDDLEWARE = [
@@ -105,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
@@ -139,3 +140,7 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+## MEDIA
+MEDIA_URL = '/media/'
+MEDIA_ROOT = str(BASE_DIR.joinpath('models'))
