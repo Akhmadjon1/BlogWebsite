@@ -6,3 +6,4 @@
 - User authentication.
 - Create, Read, Update, Delete Posts.
 
+![blog-website](https://user-images.githubusercontent.com/95521509/205497700-bc76f2a2-71c1-45e7-b58a-6055874313ea.jpg)
