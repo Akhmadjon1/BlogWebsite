@@ -14,6 +14,7 @@
 
 - Git clone.
 - In terminal, inside the project
+- make django environment,
 - pipenv install django (version higher than 3.1.0)
 - pipenv shell
 - python manage.py runserver
